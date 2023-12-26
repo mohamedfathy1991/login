@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./style..css" />
+  </head>
+  <body>
+    <button
+      onclick="logout()"
+      class="btn btn-outline-danger logout d-block ms-auto mt-2 d-none"
+    >
+      logout
+    </button>
+
+    <div class="container text-center my-4 py-3">
+      <div class="row my-4">
+        <div class="m-auto col-lg-9">
+          <div class="group shadow p-5">
+            <h1 class="text-info my-3">Smart Login System</h1>
+            <input
+              id="email"
+              placeholder="enter email"
+              type="email"
+              class="form-control my-3"
+            />
+            <input
+              id="name"
+              placeholder="enter name"
+              type="text"
+              class="form-control d-none my-3"
+            />
+            <input
+              id="password"
+              type="password"
+              class="form-control my-3"
+              placeholder="enter password"
+            />
+            <button
+              onclick="submitForm()"
+              id="btn"
+              class="btn btn-outline-info w-100 my-4"
+            >
+              login
+            </button>
+            Don’t have an account?
+            <a id="linkpage" href="#" onclick="changepage()">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=""></div>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./auth.js"></script>
+  </body>
+</html>

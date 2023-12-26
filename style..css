@@ -1,0 +1,14 @@
+body{
+      background-color: #24353f;
+      color: white;
+}
+.shadow{
+      box-shadow: 4px 5px 75px 5px black  !important;
+}
+.show{
+      display: block;
+}
+.logout button{
+      margin-left: auto;
+
+}
