@@ -24,7 +24,7 @@ function submitForm() {
     formSinUpSubmit();
 
     sininPage();
-  } else if (btnSubmit.innerHTML == "login") {
+  } else   {
     formLoginSubmit();
   }
 }
@@ -58,6 +58,7 @@ function formSinUpSubmit() {
 }
 
 function formLoginSubmit() {
+  console.log('hh')
   if (/\w+\@\w+\.(com)$/i.test(emailUser.value)) {
     console.log(usersList);
     var checkUser = usersList.find((x) => x.email == emailUser.value);
